@@ -1,0 +1,154 @@
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.user-info h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.user-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-nav ul li {
+    background: var(--card-bg-03);
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.profile-nav ul li:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.profile-nav ul li a:hover {
+    color: inherit;
+}
+
+.profile-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left:  1px solid #ddd;
+
+}
+.profile-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.profile-content .edit-info Form input {
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+.profile-content .edit-info Form input[type='submit'] , .shop-btn{
+    padding: 5px 50px;
+    background-color: var(--card-bg-03);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+
+ 
+}
+.profile-content .edit-info Form input[type='submit']:hover , .shop-btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.shop-btn {
+    padding: 5px 50px;
+    width: 22%;
+}
+.order-list table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	}
+
+/* Zebra striping */
+
+ .order-list th { 
+    background-color: var(--primary-color);
+    color: #fff;
+	font-weight:500; 
+	}
+
+.order-list td, .order-list th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 1rem;
+	}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.order-list table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	.order-list table,.order-list thead,.order-list tbody, .order-list th,.order-list td,.order-list tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.order-list thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.order-list tr { border: 1px solid #ccc; }
+	
+	.order-list td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	.order-list td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}

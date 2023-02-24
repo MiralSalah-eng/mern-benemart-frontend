@@ -1,0 +1,28 @@
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.85rem;
+  font-weight:500;
+}
+
+thead tr td {
+    background-color: var(--primary-color) !important;
+    color: #fff;
+}
+thead tr:first-child td:first-child { border-top-left-radius: 10px; }
+thead tr:first-child td:last-child { border-top-right-radius: 10px; }
+  
+thead tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+thead tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+td {
+    padding: 10px 15px !important;
+
+}
+
+.subTable {
+
+    width: 100%;
+
+}
