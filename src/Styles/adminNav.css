@@ -1,0 +1,103 @@
+.admin_header {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: auto;
+
+}
+
+.admin_nav {
+    width: 100%;
+}
+.admin_nav_wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 15px 0 ;
+}
+.logo h2 {
+    font-size:1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.admin_search_box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.admin_search_box input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    color: white
+}
+
+.admin_search_box span i{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white
+}
+
+.admin_user {
+    width: 40px;
+    height: 40px;
+}
+
+.admin_nav_menu {
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--card-bg-02);
+}
+
+.admin_menu  {
+text-align: center;
+}
+.admin_menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.7rem;
+
+}
+.admin_menu span {
+    display: none;
+ } 
+
+@media only screen and (max-width:768px) {
+ 
+    .admin_menu ul {
+        display: none;
+    }
+ .admin_menu span {
+    display: block;
+    flex: 1;
+    text-align: right;
+    cursor: pointer;
+ }  
+ .admin_menu span i {
+    font-size: 1.5rem;
+ } 
+
+ .mobileMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+}

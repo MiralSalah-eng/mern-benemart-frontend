@@ -1,0 +1,108 @@
+.title {
+    color: var(--primary-color);
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.add_input {
+    background-color: #e6e6e662;
+}
+.add_input:focus {
+    outline: none !important;
+}
+.imag_container {
+    width: 350px;
+    height: 450px;
+}
+.wrapper {
+    width: 100%;
+    height: 300px;
+    border: 1px dashed var(--hero-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+.wrapper .image {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image img{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    object-fit: cover;
+    z-index: 10;
+    background-color: #fff;
+}
+.content {
+    text-align: center;
+}
+.icon i{
+    font-size: 100px;
+    color:var(--hero-bg);
+}
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.wrapper #cancel_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.wrapper .file_name {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    background: var(--primary-color);
+}
+
+.imag_container #custom-btn{
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--hero-bg);
+  }
+
+  @media only screen and (max-width:768px) {
+    
+    .imag_container {
+        width: 300px;
+       
+    }
+}

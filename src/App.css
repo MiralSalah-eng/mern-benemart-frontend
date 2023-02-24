@@ -1,0 +1,116 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,700&display=swap');
+/*  css variables */
+:root {
+  --card-bg-01: #fdefe6;
+  --card-bg-02: #d6e5fb;
+  --card-bg-03: #ceebe9;
+  --card-bg-04: #e2f2b2;
+  --primary-color: #0a1d37;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #999;
+  --heading-text-color: #0a1d37;
+  --error: #e7195a;
+
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img{
+  width: 100%;
+}
+
+
+
+section{
+  padding: 60px 0px;
+}
+
+
+.buy_btn ,  .light_btn{
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 1rem;
+  transition: 0.1s;
+  }
+  
+.buy_btn:hover ,  .light_btn:hover{
+  scale: 1.1;
+  }
+  
+ .buy_btn a:hover {
+  color: #fff;
+  }
+
+  .light_btn a:hover {
+    color: var(--primary-color);
+  }
+
+  .light_btn {
+    background-color:#fff;
+    color:  var(--primary-color);
+    font-weight: 600;
+    width: 100%;
+}
+
+.buy_btn {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+

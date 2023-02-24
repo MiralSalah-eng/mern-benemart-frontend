@@ -1,0 +1,102 @@
+.hero {
+    background-color: var( --hero-bg);
+}
+
+.hero_content{
+    margin-top: 40px;
+}
+
+.hero_content h2 {
+color: var( --primary-color);
+font-weight: 700; 
+font-size: 2.5rem;
+margin: 20px 0;
+}
+
+/* trending and best sales sections */
+
+.sectionTitle {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/*counter*/
+.count_timer{
+    background-color: var(--primary-color);
+    height: 300px;
+}
+
+.counterContent {
+    color:white;
+}
+
+.counterContent h4{
+    font-size: 0.9rem;  
+    margin-bottom: 5px;  
+
+}
+.counterContent h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;  
+}
+
+.counterContent .btn_offer {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: white;
+    color:var(--primary-color);
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.counterContent .btn_offer:hover {
+    scale: 1.09;
+}
+.counterContent .btn_offer a:hover{
+    color:inherit
+}
+
+.counterImg{
+    text-align: end;
+}
+.counterImg img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width:992px) {
+    .hero_content h2 {
+        font-size:1.5rem;
+    }
+    .hero_content p {
+        font-size:0.8rem;
+    }
+    .count_timer {
+       text-align: center;
+    }
+    .count_timer .counterContent h4 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .count_timer .counterContent h3 {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+    .btn_offer {
+        font-size: 0.9rem;
+        margin-top: 35px !important;
+    }
+    .counterImg {
+        display: none;
+    }
+
+    .sectionTitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}

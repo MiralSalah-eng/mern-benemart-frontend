@@ -1,0 +1,67 @@
+.revenu_box , .order_box , .products_box , .users_box {
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+.revenu_box  {
+    background-color: var(--card-bg-01);
+}
+.order_box  {
+    background-color: var(--card-bg-02);
+}
+.products_box {
+    background-color: var(--card-bg-03);
+}
+.users_box   {
+    background-color: var(--card-bg-04);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h5{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.heading span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading i  {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.content {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:768px) {
+    .revenu_box , .order_box , .products_box , .users_box {
+        padding: 10px;
+        margin-bottom: 10px;
+    }   
+    .content {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .heading i  {
+        font-size: 1.2rem;
+    }
+    .heading span {
+        width: 30px;
+        height: 30px;
+    }
+    .heading h5{
+        font-size: 0.8rem;
+    }
+    
+}

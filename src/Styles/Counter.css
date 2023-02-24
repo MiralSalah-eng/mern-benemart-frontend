@@ -1,0 +1,14 @@
+@media only screen and (max-width:992px) {
+    .counterParent {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .counter_slice {
+        gap: 0.5rem !important;
+        text-align: center !important;
+    }
+    
+}

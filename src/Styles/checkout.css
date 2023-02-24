@@ -1,0 +1,29 @@
+.form-control {
+border: 1px solid  var(--card-bg-02);
+}
+
+.form-group input:focus{
+    outline: none !important;
+}
+
+.checkout_cart {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.checkout_cart h6, h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout_cart h6 {
+    margin-bottom: 20px;
+}
+
+.checkout_cart h4 {
+    border-top: 1px solid rgba(221,221,221,0.253);
+    padding-top: 20px;
+}
+

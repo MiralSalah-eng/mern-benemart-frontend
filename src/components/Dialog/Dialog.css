@@ -1,0 +1,55 @@
+.background-overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.dialog-action {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+h3, h1 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.dialog-action button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+.dialog-action .true-action {
+    background-color: var( --error);
+    margin-right: 5px;
+}
+.dialog-action .false-action {
+    background-color: var( --small-text-color);
+    margin-left: 5px;
+}
